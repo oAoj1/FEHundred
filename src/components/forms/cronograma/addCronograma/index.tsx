@@ -1,4 +1,4 @@
-import './addCronograma.css'
+import './AddCronograma.css'
 
 import { useState } from 'react'
 
