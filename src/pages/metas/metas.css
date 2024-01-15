@@ -1,0 +1,102 @@
+.metas{
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin: 1rem 0 0 0;
+}
+
+.metaConcluida{
+    background-color: var(--concluido);
+}
+
+.metaPrioridade{
+    background-color: var(--prioridade);
+}
+
+.tituloMetas{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tituloMetas span{
+    display: flex;
+    align-items: center;
+}
+
+.tituloMetas h1{
+    font-size: 3em;
+}
+
+.tituloMetas svg{
+    width: 50px;
+    height: 50px;
+
+    cursor: pointer;
+
+    border-radius: 50%;
+    border: 2px #cccc solid;
+
+    margin-left: 1rem;
+}
+
+.tituloMetas svg:active{
+    transition: 0.1s;
+    transform: rotate(90deg);
+}
+
+.todasMetas{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.listaMetas{
+    background-color: var(--azul0);
+
+    list-style-type:disc;
+
+    margin: 1rem;
+    padding: 1rem 2rem;
+
+    border: 2px solid var(--azul2);
+    border-radius: 20px;
+}
+
+.listaMetas li{
+    padding: 0.25rem;
+    border-radius: 10px;
+    margin: 0.5rem 0 0 0;
+}
+
+.listaMetas h2{
+    font-size: 1.75em;
+    color: #fff;
+    font-weight: normal;
+}
+
+.listaMetas li h3{
+    width: 100%;
+    max-width: max-content;
+
+    text-transform: capitalize;
+    
+    font-style: italic;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+    flex-wrap: wrap;
+
+    font-size: 1em;
+}
+
+.listaMetas li h3:hover{
+    text-decoration: underline;
+}

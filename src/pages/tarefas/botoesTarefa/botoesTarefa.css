@@ -1,0 +1,45 @@
+.botoesMaisOpcoesTarefas{
+    display: flex;
+    flex-direction: column;
+}
+
+.botoesMaisOpcoesTarefas button{
+    width: 40px;
+    height: 40px;
+
+    padding: 0.25rem;
+    margin:0 1rem 0.5rem 0.75rem;
+
+    cursor: pointer;
+
+    transition: 0.1s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    border: 1px solid #000;
+
+    font-size: 0.75em;
+    font-weight: normal;
+
+    background-color: var(--azul2);
+    color: #fff;
+
+}
+
+.botoesMaisOpcoesTarefas button:hover{
+    transform: translateY(-3px);
+}
+
+.botoesMaisOpcoesTarefas button svg{
+    width: 30px;
+    height: 30px;
+}
+
+.botoes{
+    display: flex;
+    align-items: center;
+}

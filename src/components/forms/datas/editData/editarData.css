@@ -1,0 +1,29 @@
+.formEditarData{
+    padding: 1rem 0;
+
+    border-radius: 20px;
+    border: 2px solid #fff;
+
+    background-color: var(--azul0);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formEditarData input{
+    width: 100%;
+    max-width: 90%;
+    outline: 0;
+    font-size: 1.25em;
+    text-transform: capitalize;
+    border: 1px solid #cccc;
+    margin: 0.25rem 0;
+    padding: 0.5rem;
+}
+
+.formEditarData button{
+    width: 70%;
+    font-size: 1.25em;
+    margin: 0.75rem 0 0 0;
+}

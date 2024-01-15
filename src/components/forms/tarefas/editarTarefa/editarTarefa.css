@@ -1,0 +1,27 @@
+.formEditarTarefa{
+    padding: 1rem 0;
+
+    border-radius: 20px;
+    border: 2px solid #fff;
+
+    background-color: var(--azul0);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formEditarTarefa input{
+    outline: 0;
+    font-size: 1.25em;
+    text-transform: capitalize;
+    border: 1px solid #cccc;
+    margin: 0.25rem 0;
+    padding: 0.5rem;
+}
+
+.formEditarTarefa button{
+    width: 70%;
+    margin: 1rem 0 0 0;
+    font-size: 1.25em;
+}

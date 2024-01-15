@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100;300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kalnia','Times New Roman', Times, serif ;
+}
+
+:root{
+    --azul0:#008cff;
+    --azul1:#1b6eb3;
+    --azul2:#0a2c47;
+    --concluido:#00ff51;
+    --prioridade:#ff4000;
+}

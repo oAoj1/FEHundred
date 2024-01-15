@@ -1,0 +1,93 @@
+.listaDatas{
+    width: 100%;
+
+    flex-wrap: wrap;
+
+    display: flex;
+    align-items: flex-start;
+
+    list-style: none;
+}
+
+.listaDatas li{
+    width: 100%;
+    max-width: max-content;
+
+    margin: 1rem;
+    padding: 1rem;
+
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.dataConcluida{
+    background-color: var(--concluido);
+}
+
+.tituloDatas{
+    max-width: max-content;
+    margin: 0 1rem ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tituloDatas span{
+    display: flex;
+    align-items: center;
+}
+
+.tituloDatas h1{
+    font-size: 3em;
+}
+
+.tituloDatas svg{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px #cccc solid;
+    margin-left: 1rem;
+}
+
+.tituloDatas svg:active{
+    transition: 0.1s;
+    transform: rotate(90deg);
+}
+
+.listaDatas li h3{
+    font-size: 2.5em;
+    text-transform: capitalize;
+    font-weight: bold;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.listaDatas li h3:hover{
+    text-decoration: underline;
+}
+
+.dataHoras{
+    display: flex;
+    align-items: center;
+}
+
+.dataHoras p{
+    font-size: 2em;
+}
+
+.dataHoras input[type='date']{
+    margin-left: 1rem;
+
+    font-size: 1em;
+    font-weight: bold;
+
+    background-color: transparent;
+
+    border: 0;
+    border-bottom: 1px solid var(--azul0);
+
+    text-align: center;
+
+    color: #000;
+}

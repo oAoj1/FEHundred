@@ -1,0 +1,55 @@
+.formAddMeta{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--azul0);
+    padding: 2rem;
+    border-radius: 20px;
+    border: 2px solid #000;
+    margin: 0 0 0 1rem;
+}
+
+.formAddMeta input{
+    margin: 0.25rem 0;
+    padding: 0.5rem;
+    font-size: 1.25em;
+    outline: 0;
+    border: 1px solid var(--azul1);
+}
+
+.formAddMeta button{
+    font-size: 1.5em;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+    margin: 1rem 0 0 0;
+    padding: 0.5rem;
+
+    border-radius: 20px;
+    border: 2px solid var(--azul1);
+
+    background-color: var(--azul2);
+    color: #fff;
+}
+
+.formAddMeta select{
+    outline: 0;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+    border: 1px solid #000;
+
+    font-size: 1.25em;
+
+    text-transform: capitalize;
+
+    padding: 0.25rem;
+}
+
+.formAddMeta button:hover{
+    transform: translateY(-3px);
+}

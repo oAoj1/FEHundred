@@ -1,0 +1,98 @@
+table{
+    width: 90%;  
+
+    background-color: var(--azul0);
+
+    margin: 1rem auto;
+    padding: 0.30rem;
+
+    border-radius: 5px;
+    border: 2px solid var(--azul2);
+
+    font-size: 0.90em;
+}
+
+.tituloCronograma{
+    max-width: max-content;
+    margin: 1rem auto ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tituloCronograma span{
+    display: flex;
+    align-items: center;
+}
+
+.tituloCronograma h1{
+    font-size: 3em;
+}
+
+.tituloCronograma svg{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px #cccc solid;
+    margin-left: 1rem;
+}
+
+.tituloCronograma svg:active{
+    transition: 0.1s;
+    transform: rotate(90deg);
+}
+
+.cronograma h1{
+    font-size: 3em;
+    text-align: center;
+}
+
+table thead tr th{
+    border-radius: 5px;
+    padding: 0.25rem;
+    text-transform: capitalize;
+}
+
+.semanaHead{
+    background-color: #7fffd4;
+}
+
+.fimSemanaHead{
+    background-color: #00ffff;
+}
+
+.semanaBody{
+    padding:0 0.25rem;
+    border-radius: 5px;
+    background-color: rgba(127, 255, 212,0.5)
+}
+
+.fimSemanaBody{
+    padding:0 0.25rem;
+    border-radius: 5px;
+    background-color: rgba(0, 255, 255,0.5  );
+}
+
+.dia{
+    height: 80vh;
+}
+
+.dia th{
+    margin: 0.25rem 0;
+
+    display: grid;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    text-transform: capitalize;
+
+    padding: 0 0.25rem;
+    
+    color: #fff;
+
+    font-weight: normal;
+    
+    border-radius: 5px;
+    background-color: #2f7fc0;
+}

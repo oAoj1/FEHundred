@@ -1,0 +1,48 @@
+.botoesMaisOpcoesDatas{
+    display: flex;
+    flex-direction: column;
+}
+
+.botoesMaisOpcoesDatas button{
+    width: 50px;
+    height: 50px;
+
+    padding: 0.20rem;
+    margin:0 0.75rem 0.25rem 0rem;
+
+    cursor: pointer;
+
+    transition: 0.1s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    border: 1px solid #000;
+
+    font-size: 0.75em;
+    font-weight: normal;
+
+    background-color: var(--azul2);
+    color: #fff;
+
+}
+
+.botoesMaisOpcoesDatas button:hover{
+    transform: translateY(-3px);
+}
+
+.botoesMaisOpcoesDatas button svg{
+    width: 20px;
+    height: 20px;
+}
+
+.botoes{
+    width: 100%;
+    margin: 0.5rem 0 0 0;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+}

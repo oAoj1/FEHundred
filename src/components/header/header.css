@@ -1,0 +1,149 @@
+header{
+    width: 100%;
+
+    padding: 0.5rem 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background-color: var(--azul1);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.overlay{
+    background-color: rgba(0,0,0,0.5);
+
+    top: 0;
+    position: fixed;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 2;
+}
+
+.menuResponsivo{
+    width: 50px;
+    height: 50px;
+
+    cursor: pointer;
+
+    display: none;
+}
+
+.listaBotoesLinksResponsivo{
+    display: none;
+
+    width: 40vw;
+    height: 100vh;
+
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    background-color: var(--azul2);
+
+    list-style-type: none;
+    
+    z-index: 999;
+}
+
+.listaBotoesLinksResponsivo li{
+    margin: 1rem;
+}
+
+.listaBotoesLinksResponsivo li button{
+    font-size: 1.5em;
+
+    cursor: pointer;
+
+    text-transform: capitalize;
+
+    padding: 0.25rem;
+
+    background-color: transparent;
+
+    color: #ccc;
+
+    border: 0;
+
+    transition: 0.1s;
+}
+
+.listaBotoesLinksResponsivo li button:hover{
+    color: #fff;
+}
+
+.fecharMenuResponsivo{
+    width: 40px;
+    height: 40px;
+
+    color: rgba(255, 0, 0,0.5);
+
+    margin: 1rem 0 0 1rem;
+
+    transition: 0.1s;
+
+    cursor: pointer;
+}
+
+.fecharMenuResponsivo:hover{
+    color: rgba(255, 0, 0);
+}
+
+.tituloHeader span{
+    font-size: 2.5em;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.listaBotoesLinks{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.listaBotoesLinks li{
+    margin: 0 1rem;
+}
+
+.listaBotoesLinks li button{
+    padding: 0.35rem;
+
+    text-transform: capitalize;
+
+    transition: 0.2s;
+
+    cursor: pointer;
+
+    background-color:transparent;
+    color: #fff;
+    
+    border: 0;
+    border-radius: 10px;
+
+    font-size: 1em;
+
+    outline: 0;
+}
+
+.listaBotoesLinks li button:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:768px){
+    .listaBotoesLinks{
+        display: none;
+    }
+
+    .menuResponsivo,
+    .listaBotoesLinksResponsivo{
+        display: block;
+    }
+
+}

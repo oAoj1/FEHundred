@@ -1,0 +1,99 @@
+.tarefas{
+    width: 100%;
+    padding: 1rem 2rem;
+}
+
+.tituloTarefas{
+    max-width: max-content;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tituloTarefas span{
+    display: flex;
+    align-items: center;
+}
+
+.tituloTarefas svg{
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    border: 2px #cccc solid;
+
+    margin-left: 1rem;
+
+    cursor: pointer;
+}
+
+.tituloTarefas svg:active{
+    transition: 0.1s;
+    transform: rotate(90deg);
+}
+
+.tarefas h1{
+    font-size: 3em;
+}
+
+.listaTarefas{
+    list-style-type: none;
+}
+
+.listaTarefas li{
+    width: 100%;
+    max-width: max-content;
+
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+
+    cursor: pointer;
+
+    border-radius: 20px;
+}
+
+.tarefaConcluida{
+    background-color:#00ff51 ;
+}
+
+.tarefaPrioridade{
+    background-color: #ff4000;
+}
+
+.listaTarefas li h3{
+    transition: 0.2s;
+    text-transform: capitalize;
+    font-weight: normal;
+    font-size: 1.75em;
+}
+
+.listaTarefas li h3:hover{
+    transform: translateY(-2px);
+    text-decoration: underline;
+}
+
+.maisOpcoesTarefa{
+    background-color: var(--azul1);
+    border-radius: 20px;
+    padding: 0 2rem 2rem 2rem;
+}
+
+.maisOpcoesTarefa .setaCima{
+    width: 50px;
+    height: 50px;
+
+    position: relative;
+    bottom: 25px;
+    
+    color: var(--azul1);
+}
+
+.maisOpcoesTarefa h4{
+    text-transform: capitalize;
+    padding: 0 0 1rem 1rem;
+    font-size: 1em;
+    width: 70%;
+    color: #fff;
+    font-weight: normal;
+}
