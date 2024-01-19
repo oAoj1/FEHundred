@@ -90,10 +90,10 @@
 }
 
 .maisOpcoesTarefa h4{
+    width: 70%;
     text-transform: capitalize;
     padding: 0 0 1rem 1rem;
     font-size: 1em;
-    width: 70%;
     color: #fff;
     font-weight: normal;
 }

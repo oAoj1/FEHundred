@@ -1,5 +1,5 @@
 table{
-    width: 90%;  
+    width: 99.9%;  
 
     background-color: var(--azul0);
 
@@ -9,12 +9,20 @@ table{
     border-radius: 5px;
     border: 2px solid var(--azul2);
 
-    font-size: 0.90em;
+    font-size: 0.75em;
+}
+
+table thead tr th{
+    border-radius: 5px;
+    padding: 0.25rem;
+    text-transform: capitalize;
 }
 
 .tituloCronograma{
     max-width: max-content;
-    margin: 1rem auto ;
+
+    margin: 1rem auto;
+
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -32,9 +40,12 @@ table{
 .tituloCronograma svg{
     width: 50px;
     height: 50px;
+
     cursor: pointer;
+
     border-radius: 50%;
     border: 2px #cccc solid;
+
     margin-left: 1rem;
 }
 
@@ -46,12 +57,6 @@ table{
 .cronograma h1{
     font-size: 3em;
     text-align: center;
-}
-
-table thead tr th{
-    border-radius: 5px;
-    padding: 0.25rem;
-    text-transform: capitalize;
 }
 
 .semanaHead{
@@ -75,19 +80,20 @@ table thead tr th{
 }
 
 .dia{
-    height: 80vh;
+    height: 100vh;
 }
 
 .dia th{
+    width: 100%;
     margin: 0.25rem 0;
 
-    display: grid;
-    align-items: flex-start;
+    display: flex;
+    align-items: center;
     justify-content: flex-start;
 
     text-transform: capitalize;
 
-    padding: 0 0.25rem;
+    padding: 0.20rem 0.25rem;
     
     color: #fff;
 
@@ -95,4 +101,73 @@ table thead tr th{
     
     border-radius: 5px;
     background-color: #2f7fc0;
+}
+
+.dia th .ajustarFlexCronograma{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dia th .ajustarFlexCronograma svg{
+    width: 20px;
+    height: 20px;
+
+    cursor: pointer;
+
+    transition: 0.1s;
+}
+
+.dia th .ajustarFlexCronograma svg:hover{
+    transform: scale(1.1);
+}
+
+.ajustarFlexCronograma .horariosTarefas .formEditarTarefaCronograma input{
+    width: 150px;
+
+    padding: 0.15rem;
+
+    font-size: 1em;
+
+    outline: 0;
+
+    color: #000;
+    background-color: #fff;
+
+    border: 1px solid #000;
+    border-radius: 3px;
+
+    transition: 0.1s;
+}
+
+.ajustarFlexCronograma .horariosTarefas .formEditarTarefaCronograma input:nth-child(1){
+    width: 80px;
+}
+
+.ajustarFlexCronograma .horariosTarefas .formEditarTarefaCronograma input:focus{
+   animation: inputPiscando 1.5s infinite;
+}
+
+.ajustarFlexCronograma .horariosTarefas .formEditarTarefaCronograma button{
+    border: 0;
+
+    outline: 0;
+
+    padding: 0.20rem;
+    margin: 0 0.25rem;
+    
+    cursor: pointer;
+
+    border-radius: 3px;
+}
+
+@keyframes inputPiscando{
+    0%{
+        background-color: #fff;
+    }
+    50%{
+        background-color: #00ffff;
+    }
 }
